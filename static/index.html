@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Aprendendo sobre o GO</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #87CEFA;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Aplicação web - Aprendendo sobre go </h2>
+<p>Go não é uma linguagem orientada a objetos (OO) como C ++, Java, Ruby e C #. Não possui objetos nem herança e
+    portanto, não tem muitos conceitos associados a OO, como polimorfismo e sobrecarga.
+    O que Go tem são estruturas, que podem ser associadas a métodos. Go também oferece suporte a um formulário simples, mas eficaz
+    de composição. No geral, isso resulta em um código mais simples, mas haverá ocasiões em que você perderá um pouco do que OO tem que
+    oferta. (Vale a pena ressaltar que composição sobre herança é um antigo grito de guerra e Go é a primeira linguagem que eu tenho
+    usado que assume uma posição firme sobre o assunto.)</p>
+<p>Embora Go não faça OO como você está acostumado, você notará muitas semelhanças entre a definição de uma estrutura
+    e de uma classe. 
+</p>
+
+<header>
+  <h2>GO</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Facilitando o entendimento</a></li>
+      <li><a href="#">Por que usar go?</a></li>
+      <li><a href="#">História do go</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Facilitando o entendimento</h1>
+    <p>Se você é novo no mundo da programação simultânea, tudo pode parecer bastante opressor. Isso exige categoricamente
+    consideravelmente mais atenção e cuidado. O objetivo do Go é tornar isso mais fácil.
+    Goroutines efetivamente abstraem o que é necessário para executar o código simultâneo. Os canais ajudam a eliminar alguns bugs graves que
+    pode acontecer quando os dados são compartilhados, eliminando o compartilhamento de dados. Isso não apenas elimina bugs, mas muda
+    como alguém aborda a programação simultânea. Você começa a pensar sobre a simultaneidade no que diz respeito à passagem de mensagens,
+    em vez de áreas perigosas do código.
+    Dito isso, eu ainda faço uso extensivo dos vários primitivos de sincronização encontrados no sync e sync /
+    pacotes atômicos. Eu acho que é importante estar confortável com ambos. Eu encorajo você a se concentrar primeiro nos canais, mas
+    quando você vir um exemplo simples que precisa de um bloqueio de curta duração, considere usar um mutex ou um mutex readwrite.</p>
+ 
+  </article>
+</section>
+
+<footer>
+  <p>Efetuado para explorar a linguagem go</p>
+</footer>
+
+</body>
+</html>
